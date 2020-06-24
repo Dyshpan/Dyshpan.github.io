@@ -1,0 +1,196 @@
+.button {
+  width: 234px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 20px 0;
+
+  text-transform: uppercase;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.05em;
+
+  background-color: transparent;
+  border: 4px solid #ffffff;
+
+  box-sizing: border-box;
+  outline: 0;
+
+  &:hover {
+    background-color: #ffffff;
+    color: #1c3374;
+  }
+
+  &:active {
+    color: #1c3374;
+  }
+}
+
+.button--subscription-buy {
+  color: #ffffff;
+  align-self: flex-end;
+
+  &:hover,
+  &:active {
+    border-color: #1c3374;
+  }
+}
+
+.button--buy {
+  width: 206px;
+  border: 2px solid #102654;
+  padding-top: 24px;
+  padding-bottom: 26px;
+  color: #102654;
+  margin-bottom: 56px;
+}
+
+.button--promo {
+  width: 100%;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  color: #ffffff;
+}
+
+.button--back {
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  border: none;
+  padding: 0;
+  border-bottom: 1px solid #afafaf;
+  border-left: 1px solid #afafaf;
+  transform: rotate(45deg);
+  z-index: 1;
+  outline: 0;
+
+  &:hover {
+    background-color: transparent;
+  }
+}
+
+.button--next {
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  border: none;
+  padding: 0;
+  border-bottom: 1px solid #afafaf;
+  border-right: 1px solid #afafaf;
+  transform: rotate(-45deg);
+  z-index: 1;
+  outline: 0;
+
+  &:hover {
+    background-color: transparent;
+  }
+}
+
+.button--trainers-back {
+  left: -2.4%;
+  bottom: 49%;
+}
+
+.button--trainers-next {
+  right: -2.4%;
+  bottom: 49%;
+}
+
+.button--reviews-back {
+  left: -9%;
+  bottom: 45%;
+}
+
+.button--reviews-next {
+  right: -9%;
+  bottom: 45%;
+}
+
+.button--form {
+  width: 100%;
+  color: #ffffff;
+  font-size: 14px;
+  line-height: 16px;
+  padding-top: 18px;
+  padding-bottom: 16px;
+}
+
+@media (max-width: $tablet-width) {
+  .button--subscription-buy {
+    width: 187px;
+  }
+
+  .button--buy {
+    padding-bottom: 24px;
+  }
+
+  .button--promo {
+    border-width: 1px;
+    padding-top: 13px;
+    padding-bottom: 13px;
+    font-size: 10px;
+    line-height: 12px;
+  }
+
+  .button--trainers-back {
+    left: -6%;
+  }
+
+  .button--trainers-next {
+    right: -6%;
+  }
+
+  .button--reviews-back {
+    left: -6%;
+  }
+
+  .button--reviews-next {
+    right: -6%;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .button--subscription-buy {
+    width: 100%;
+  }
+
+  .button--buy {
+    margin-bottom: 44px;
+  }
+
+  .button--trainers-back,
+  .button--trainers-next {
+    width: 14px;
+    height: 14px;
+    bottom: 47.4%;
+  }
+
+  .button--trainers-back {
+    left: -3%;
+  }
+
+  .button--trainers-next {
+    right: -3%;
+  }
+
+  .button--reviews-back {
+    left: -13%;
+    bottom: 47%;
+    width: 17px;
+    height: 17px;
+  }
+
+  .button--reviews-next {
+    right: -13%;
+    bottom: 47%;
+    width: 17px;
+    height: 17px;
+  }
+
+  .button--form {
+    width: 100%;
+  }
+}

@@ -1,0 +1,26 @@
+.slider {
+  overflow: hidden;
+}
+
+.slider__wrapper {
+  display: flex;
+  transition: transform 0.6s ease;
+}
+
+.slider__item {
+  flex: 0 0 25%;
+  max-width: 50%;
+}
+
+@media (max-width: $tablet-width) {
+  .slider__item {
+    flex: 0 0 50%;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .slider__item {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}

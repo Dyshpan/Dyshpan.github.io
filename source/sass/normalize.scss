@@ -1,0 +1,111 @@
+html {
+  font-family: sans-serif;
+  --ms-text-size-adjust: 100%;
+  --webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section,
+summary {
+  display: block;
+}
+
+a {
+  background: transparent;
+
+  &:active,
+  &:hover {
+    outline: 0;
+  }
+}
+
+b,
+strong {
+  font-weight: bold;
+}
+
+img {
+  border: 0;
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  color: inherit;
+  font: inherit;
+  margin: 0;
+}
+
+button {
+  overflow: visible;
+}
+
+button,
+select {
+  text-transform: none;
+}
+
+button,
+html input[type="button"] {
+  --webkit-appearance: button;
+  cursor: pointer;
+}
+
+input {
+  line-height: normal;
+
+  &[type="reset"],
+  &[type="submit"] {
+    --webkit-appearance: button;
+    cursor: pointer;
+  }
+
+  &[type="checkbox"],
+  &[type="radio"] {
+    box-sizing: border-box;
+    padding: 0;
+  }
+
+  &[type="number"] {
+    &::-webkit-inner-spin-button,
+    &::-webkit-outer-spin-button {
+      height: auto;
+    }
+  }
+
+  &[type="search"] {
+    --webkit-appearance: textfield;
+    --moz-box-sizing: content-box;
+    --webkit-box-sizing: content-box;
+    box-sizing: content-box;
+
+    &::-webkit-search-cancel-button,
+    &::-webkit-search-decoration {
+      --webkit-appearance: none;
+    }
+  }
+}
+
+legend {
+  border: 0;
+  padding: 0;
+}
+
+textarea {
+  overflow: auto;
+}

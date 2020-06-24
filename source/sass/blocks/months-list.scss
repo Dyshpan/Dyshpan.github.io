@@ -1,0 +1,58 @@
+.months-list {
+  list-style: none;
+  padding: 0;
+  margin-top: 0;
+  display: flex;
+  padding-bottom: 0;
+  border-bottom: 2px solid rgba(120, 120, 120, 0.2);
+}
+
+.months-list__item {
+  position: relative;
+  padding-right: 34px;
+
+  font-size: 20px;
+
+  /* or 30px */
+
+  &:last-child {
+    padding-right: 0;
+  }
+}
+
+.months-list__button {
+  border: none;
+  background-color: transparent;
+  color: rgba(16, 38, 84, 0.5);
+  padding-bottom: 10px;
+  margin: 0;
+  outline: 0;
+}
+
+.months-list__button--active {
+  border-bottom: 2px solid #d10a42;
+  color: #102654;
+}
+
+@media (max-width: $tablet-width) {
+  .months-list__item {
+    font-size: 18px;
+    padding-right: 43px;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .months-list__item {
+    font-size: 16px;
+    padding-right: 45px;
+  }
+
+  .months-list__item a {
+    padding-bottom: 14px;
+  }
+
+  .months-list__button {
+    padding: 0;
+    padding-bottom: 17px;
+  }
+}

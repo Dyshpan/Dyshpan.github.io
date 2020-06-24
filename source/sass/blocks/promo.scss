@@ -1,0 +1,51 @@
+.promo {
+  width: 100%;
+  display: flex;
+  margin: 0 auto;
+  justify-content: center;
+}
+
+.promo__info {
+  width: 43.1%;
+  padding-top: 80px;
+
+  background-color: #ed0233;
+  color: #ffffff;
+  flex-grow: 1;
+}
+
+.promo__photo img {
+  object-fit: cover;
+  height: 100%;
+}
+
+
+@media (max-width: $tablet-width) {
+  .promo__info {
+    padding-top: 47px;
+  }
+
+  .promo__photo {
+    max-height: 292px;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .promo {
+    flex-direction: column;
+  }
+
+  .promo__info,
+  .promo__photo {
+    width: 100%;
+  }
+
+  .promo__photo {
+    max-height: none;
+  }
+
+
+  .promo__photo img {
+    width: 100%;
+  }
+}

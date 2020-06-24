@@ -1,0 +1,26 @@
+.trainers {
+  width: 100%;
+}
+
+.trainers h2 {
+  padding-bottom: 55px;
+}
+
+@media (max-width: $tablet-width) {
+  .trainers {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .trainers h2 {
+    text-align: center;
+    padding-bottom: 42px;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .trainers h2 {
+    padding-bottom: 44px;
+  }
+}

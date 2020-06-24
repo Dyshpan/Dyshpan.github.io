@@ -1,0 +1,34 @@
+.contacts {
+  width: 464px;
+  padding-left: 120px;
+  padding-top: 65px;
+  padding-bottom: 45px;
+}
+
+.contacts h2 {
+  padding-bottom: 45px;
+}
+
+@media (max-width: $tablet-width) {
+  .contacts {
+    width: auto;
+    padding-left: 86px;
+    padding-top: 67px;
+    padding-bottom: 38px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+  }
+
+  .contacts h2 {
+    padding-bottom: 40px;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .contacts {
+    width: auto;
+    padding-left: 0;
+  }
+}

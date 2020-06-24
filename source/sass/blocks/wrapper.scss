@@ -1,0 +1,36 @@
+.wrapper {
+  background-color: #f8f9fc;
+}
+
+.wrapper--subscription {
+  position: relative;
+
+  &::after {
+    content: url("../../img/pancakes-desktop.png");
+    position: absolute;
+    bottom: -153px;
+    right: 0;
+  }
+}
+
+.wrapper--contacts {
+  display: flex;
+}
+
+@media (max-width: $tablet-width) {
+  .wrapper--subscription::after {
+    content: url("../../img/pancakes-tablet.png");
+    bottom: -128px;
+    right: 0;
+  }
+
+  .wrapper--contacts {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .wrapper--subscription::after {
+    display: none;
+  }
+}

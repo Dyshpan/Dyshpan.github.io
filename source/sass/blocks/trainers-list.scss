@@ -1,0 +1,44 @@
+.trainers-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+
+  width: 100%;
+  display: flex;
+}
+
+.trainers-list__item {
+  position: relative;
+  width: 260px;
+  max-height: 294px;
+  color: #ffffff;
+
+  &:hover,
+  &:focus {
+    .actions {
+      display: block;
+    }
+
+    .profile p {
+      display: none;
+    }
+  }
+}
+
+.trainers-list__item--closed {
+  display: none;
+}
+
+
+@media (max-width: $tablet-width) {
+  .trainers-list__item {
+    width: 268px;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .trainers-list__item {
+    width: 226px;
+    height: 274px;
+  }
+}
